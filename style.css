@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+ a {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+#read-btn  {
+    background: #FDD48E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 28px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+#read-btn a {
+    text-decoration: none;
+}
+
+#read-btn a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+.main-content {
+    position: absolute;
+    top: -175px;
+    left: -130px;
+}
+
+.main-content h1 {
+    position: absolute;
+    width: 900px;
+    height: 73px;
+    left: 420px;
+    top: 340px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 73px;
+    color: #454343;
+}
+
+.prompt-section .prompt {
+    position: absolute;
+    width: 717px;
+    height: 80px;
+    left: 400px;
+    top: 450px;
+    background: #FDD48E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: none;
+    font-family: 'Inter';
+    font-weight: 300;
+    padding: 20px;
+    font-size: 34px;
+    line-height: 41px;
+    color: rgba(0, 0, 0, 0.46);
+}
+
+.prompt-section .ask-button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 1180px;
+    top: 450px;
+    background: #FDD48E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.prompt-section textarea {
+    position: absolute;
+    width: 760px;
+    height: 200px;
+    left: 395px;
+    top: 590px;
+    background: #FFEDC2;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.left-chakra .top {
+    position: relative;
+    left: 130px;
+    top: 470px;
+}
+
+.left-chakra .bottom {
+    position: relative;
+    top: 382px;
+    left: 130px;
+    height: 450px;
+}
+
+/* .navbar a {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.home {
+    position: absolute;
+    width: 57px;
+    height: 24px;
+    left: 230px;
+    top: 16px;
+}
+
+.about {
+    position: absolute;
+    width: 90px;
+    height: 24px;
+    left: 354px;
+    top: 16px;
+}
+
+.login {
+    position: absolute;
+    width: 59px;
+    height: 24px;
+    left: 1401px;
+    top: 16px;
+}
+
+.signup {
+    position: absolute;
+    width: 73px;
+    height: 24px;
+    left: 1525px;
+    top: 16px;
+}
+
+
+.read-btn {
+    position: absolute;
+    width: 130px;
+    height: 39px;
+    left: 1710px;
+    top: 15px;
+    background: #FDD48E;
+    border-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 28px;
+}
+
+.main-content {
+    position: absolute;
+    width: 864px;
+    height: 73px;
+    left: 440px;
+    top: 368px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 73px;
+    color: #454343;
+}
+
+.ask-question {
+    position: absolute;
+    width: 717px;
+    height: 80px;
+    left: 210px;
+    top: 150px;
+    background: #FDD48E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    font-weight: 300;
+    padding-left: 20px;
+    font-size: 34px;
+    line-height: 41px;
+    color: rgba(0, 0, 0, 0.46);
+}
+
+.ask-button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 1065px;
+    top: 150px;
+    background: #FDD48E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+}
+
+.ask-button img {
+    position: absolute;
+    height: 54px;
+    width: 120px;
+    left: -27%;
+    right: 25.75%;
+    top: 20.00%;
+    bottom: 47.04%;
+}
+
+.answer-container  {
+    position: absolute;
+    width: 900px;
+    height: 250px;
+    left: 150px;
+    top: 300px;
+    background: #FFEDC2;
+    border-radius: 7px;
+}
+
+.answer-container .answer {
+    position: absolute;
+    text-align: justify;
+    width: 700px;
+    height: 125px;
+    left: 30px;
+    top: 25px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.main-content .left-chakra {
+    position: absolute;
+    width: 1726px;
+    height: 996px;
+    left: -442px;
+    top: -220px;
+}
+
+.main-content .left-chakra .bottom{
+    position: relative;
+    top: -16px;
+}
+
+.main-content .right-chakra .bottom {
+    position: relative;
+    top: -16px;
+}
+
+.main-content .right-chakra {
+    position: absolute;
+    width: 1726px;
+    height: 996px;
+    left: -442px;
+    top: -220px;
+} */
