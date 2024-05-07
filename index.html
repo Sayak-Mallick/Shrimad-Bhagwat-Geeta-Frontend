@@ -1,53 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+        <link rel="stylesheet" href="style.css">
     <title>Shrimad Bhagwad Geeta Ai</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="m-4">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <!-- <a href="#" class="navbar-brand">Brand</a> -->
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav">
-                        <a href="#" style="position: relative;left: 100px;" class="nav-item nav-link active">Home</a>
-                        <a href="#" style="position: relative;left: 150px;" class="nav-item nav-link active">About Us</a>
-                      
-                    </div>
-                    <div class="navbar-nav ms-auto">
-                        <a href="#" style="position: relative;left: -200px;" class="nav-item nav-link active">Login</a>
-                        <a href="#" style="position: relative;left: -150px;" class="nav-item nav-link active">Messages</a>
-                        <button id="read-btn" class="nav-item nav-link btn btn-secondary"> <a href="https://www.google.com/">Read The Geeta</a></button>
+    <header>
+        <nav>
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center p-5">
+                    <a href="#" class="text-2xl font-bold">Geeta.ai</a>
+                    <div class="space-x-4 text-white font-medium">
+                        <a href="#" class="text-sm">Home</a>
+                        <a href="#" class="text-sm">About Us</a>
+                        <button id="read-btn"
+                            class="btn btn-secondary bg-[#FDD48E] text-white text-md shadow-md p-2 rounded-md transition-all duration-300 transform hover:scale-105">
+                            <a href="https://www.google.com/">Read Geeta</a>
+                        </button>
                     </div>
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
 
-
-    <section class="main-content">
-        <h1>What troubles you my friend?</h1>
-        <div class="prompt-section">
-            <input type="text" class="prompt" placeholder="Enter The Question">
-            <button class="ask-button"><img src="images/Ask.svg" alt=""></button>
-            <textarea class="answer-container">You will get your response here...</textarea>
-        </div>
-        
-        <!-- <div class="left-chakra">
-            <img class="top" src="images/ss1.png" alt="">
-            <img class="bottom" src="images/ss1-reverse.png" alt="">
-        </div>     -->
-    </section>
+    <main class="">
+        <section>
+            <div class="container mx-auto">
+                <h1 class="text-4xl font-bold text-center mt-10">What troubles you my friend?</h1>
+                <form action="">
+                    <div class="flex justify-center items-center gap-10 mt-10">
+                        <input type="text"
+                            class="p-3 border border-white border-2  rounded-md bg-transparent text-black w-[60%]"
+                            placeholder="Enter The Question">
+                        <button
+                            class="btn btn-primary bg-[#FDD48E] text-white text-md shadow-md p-3 rounded-full border-white border-2 transition-all duration-300 transform hover:scale-105">
+                            <img src="images/Ask.svg" class="w-6 h-6 text-white" alt="">
+                        </button>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <textarea
+                            class="p-2 border border-white border-2 rounded-md bg-transparent text-black w-[75%] min-h-[150px] mx-auto mt-4"
+                            placeholder="You will get your response here..."></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
